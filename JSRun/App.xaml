@@ -4,7 +4,8 @@
     <!-- Original Light Theme
     <StyleInclude Source="resm:Avalonia.Themes.Default.Accents.BaseLight.xaml?assembly=Avalonia.Themes.Default" />
     -->
-    <StyleInclude Source="resm:JSRun.Styles.nkUI.nkDarkWindow.xaml?assembly=JSRun" />
+    <StyleInclude Source="resm:JSRun.Styles.nkUI.nkBaseDark.xaml?assembly=JSRun" />
     <StyleInclude Source="resm:JSRun.Styles.nkUI.nkControlStyles.xaml?assembly=JSRun" />
+    <StyleInclude Source="resm:JSRun.Styles.JSRun.MiniDarkTheme.xaml?assembly=JSRun" />
   </Application.Styles>
 </Application>

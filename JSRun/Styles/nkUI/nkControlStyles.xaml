@@ -1,5 +1,3 @@
 ﻿<Styles xmlns="https://github.com/avaloniaui">
-  <Style Selector="Button">
-    <Setter Property="Background" Value="WhiteSmoke" />
-  </Style>
+  <!--Nothing here yet.-->
 </Styles>

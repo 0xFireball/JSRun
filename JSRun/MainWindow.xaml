@@ -1,7 +1,6 @@
 ﻿<Window
     xmlns="https://github.com/avaloniaui"
     Width="800" Height="640"
-    Background="#FDFDFD"
     Icon="resm:JSRun.Assets.icon.ico?assembly=JSRun"
     MinWidth="500" MinHeight="300">
   <!--
@@ -39,7 +38,7 @@
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
         <TextBlock Text="JSRun" FontSize="16" FontWeight="SemiBold" />
-        <TextBox AcceptsReturn="True" FontFamily="Consolas" TextWrapping="Wrap" VerticalAlignment="Stretch" Margin="0,25,5,35" BorderThickness="2" BorderBrush="LightSkyBlue" />
+        <TextBox AcceptsReturn="True" FontFamily="Consolas" TextWrapping="Wrap" VerticalAlignment="Stretch" Margin="0,25,5,35" />
         <Button Content="Run" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" />
       </Grid>
 
