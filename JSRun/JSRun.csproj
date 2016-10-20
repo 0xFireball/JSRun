@@ -12,6 +12,8 @@
     <AssemblyName>JSRun</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -196,6 +199,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainWindow.xaml" />
+    <Compile Include="Controls\MirrorEdit\CodeEditor.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -203,9 +207,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Mac\MyApp.app\Contents\Info.plist" />
+    <None Include="Mac\MyApp.app\Contents\MacOS\Launcher.exec" />
+    <None Include="Mac\MyApp.app\Contents\Resources\Icon.icns" />
+    <None Include="Mac\MyApp.app\MacAppTemplate.app\Contents\Info.plist" />
+    <None Include="Mac\MyApp.app\MacAppTemplate.app\Contents\MacOS\Launcher.exec" />
+    <None Include="Mac\MyApp.app\MacAppTemplate.app\Contents\Resources\Icon.icns" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mac\MyApp.app\Contents\MonoBundle\README.txt" />
+    <Content Include="Mac\MyApp.app\MacAppTemplate.app\Contents\MonoBundle\README.txt" />
+    <Content Include="Mac\README.txt" />
     <EmbeddedResource Include="Assets\icon.ico" />
     <Content Include="icon.ico" />
   </ItemGroup>
@@ -224,6 +237,7 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
