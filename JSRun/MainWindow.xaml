@@ -1,6 +1,6 @@
 ﻿<Window
     xmlns="https://github.com/avaloniaui"
-    xmlns:mirrorEdit="clr-namespace:IridiumIon.MirrorEdit;assembly=JSRun"
+    xmlns:te="clr-namespace:AvalonStudio.TextEditor?assembly=AvalonStudio.TextEditor"
     Width="800" Height="640"
     Icon="resm:JSRun.Assets.icon.ico?assembly=JSRun"
     MinWidth="500" MinHeight="300">
@@ -39,7 +39,8 @@
       </Grid.ColumnDefinitions>
       <Grid Grid.Column="0">
         <TextBlock Text="JSRun" FontSize="16" FontWeight="SemiBold" />
-        <mirrorEdit:CodeEditor VerticalAlignment="Stretch" Margin="0,25,5,35" />
+        <te:TextEditor
+          VerticalAlignment="Stretch" Margin="0,25,5,35" />
         <Button Content="Run" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" />
       </Grid>
 
